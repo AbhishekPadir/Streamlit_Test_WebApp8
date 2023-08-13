@@ -11,7 +11,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Database connection configuration
 db_config = {
-    'driver': 'SQL Server',
+    'driver': "ODBC Driver 17 for SQL Server",
     'server': 'LAPTOP-G6PS8U02\SQLEXPRESS',
     'database': 'Abhishekdb',
      #'trusted_connection': 'yes'
@@ -19,7 +19,7 @@ db_config = {
 
 # Establish a connection to the SQL Server database
 connection = pyodbc.connect(**db_config)
-#connection = pyodbc.connect("DRIVER={ODBC Driver 19 for SQL Server};SERVER=LAPTOP-G6PS8U02\SQLEXPRESS;DATABASE=Abhishekdb")
+#connection = pyodbc.connect("DRIVER={ODBC Driver 17 for SQL Server};SERVER=LAPTOP-G6PS8U02\SQLEXPRESS;DATABASE=Abhishekdb")
 
 #connection = pyodbc.connect(**db_config)
 
